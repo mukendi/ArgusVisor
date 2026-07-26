@@ -1,0 +1,31 @@
+﻿C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.vcxproj(64,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.Shared.props (366,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.vcxproj(121,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.common.targets (2087,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Building 'ArgusVisor' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\ArgusVisor.inf
+  Stamping [Version] section with DriverVer=07/26/2026,10.5.31.796
+C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.inf(33-33): warning 2083: Section [standard.ntamd64.10.0...16299] not referenced or used.
+  driver_entry.cpp
+  ept.cpp
+  Generating Code...
+  ArgusVisor.vcxproj -> C:\Users\ultim\source\repos\ArgusVisor\x64\Debug\ArgusVisor.sys
+C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.vcxproj(64,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.Shared.props (366,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.vcxproj(121,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.common.targets (2087,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\ultim\source\repos\ArgusVisor\x64\Debug\ArgusVisor.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\ultim\source\repos\ArgusVisor\x64\Debug\ArgusVisor\argusvisor.cat
+C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.vcxproj(64,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.Shared.props (366,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\ultim\source\repos\ArgusVisor\ArgusVisor\ArgusVisor.vcxproj(121,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.common.targets (2087,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\ultim\source\repos\ArgusVisor\x64\Debug\ArgusVisor\argusvisor.cat
+  
