@@ -150,7 +150,7 @@ The current implementation provides:
 
 # Educational Goals
 
-ArgusVisor was created to explain—not hide—the internal mechanisms of Intel VT-x.
+ArgusVisor was created to explain not hide the internal mechanisms of Intel VT-x.
 
 Topics explored include:
 
