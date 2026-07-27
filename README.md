@@ -34,8 +34,3 @@ Hardware
 -> Windows kernel
 -> ArgusVisor driver
 
-
-
-ArgusVisorCleanupVmxStructures(): Releases per-CPU allocations (VMXON, VMCS, Host stack) if initialization fails on any core.
-
-ArgusVisorTerminateEpt(): Destroys EPT paging structures and frees GlobalEptData.
