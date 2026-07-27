@@ -57,7 +57,7 @@ The objective is not to build another production hypervisor, but to create a rea
 ArgusVisor
 │
 ├── DriverEntry.cpp
-├── ArgusVisorAsm.asm
+├── ArgusVisor.asm
 ├── vmcs_encoder.h
 ├── ept.cpp
 ├── vmexit.cpp
