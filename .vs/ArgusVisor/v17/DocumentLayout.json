@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ept.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\ept.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\driver_entry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\driver_entry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\vmcs_encoder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\vmcs_encoder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\driver_entry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\driver_entry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ArgusVisor.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\ArgusVisor.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\vmcs_encoder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\vmcs_encoder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ept.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|solutionrelative:ArgusVisor\\ept.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91D865DD-B5D9-DE72-C951-AB8FAC9DEC15}|ArgusVisor\\ArgusVisor.vcxproj|C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ept.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ept.cpp",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ept.cpp",
               "RelativeDocumentMoniker": "ArgusVisor\\ept.cpp",
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "header.h",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\header.h",
               "RelativeDocumentMoniker": "ArgusVisor\\header.h",
@@ -91,11 +91,12 @@
               "RelativeToolTip": "ArgusVisor\\header.h",
               "ViewState": "AgIAABYAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-23T14:26:24.077Z"
+              "WhenOpened": "2026-07-23T14:26:24.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "vmcs_encoder.h",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\vmcs_encoder.h",
               "RelativeDocumentMoniker": "ArgusVisor\\vmcs_encoder.h",
@@ -103,43 +104,47 @@
               "RelativeToolTip": "ArgusVisor\\vmcs_encoder.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-23T14:10:06.294Z"
+              "WhenOpened": "2026-07-23T14:10:06.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ArgusVisor.asm",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ArgusVisor.asm",
               "RelativeDocumentMoniker": "ArgusVisor\\ArgusVisor.asm",
               "ToolTip": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\ArgusVisor.asm",
               "RelativeToolTip": "ArgusVisor\\ArgusVisor.asm",
-              "ViewState": "AgIAABkBAAAAAAAAAAAAACEBAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAACEBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-07-23T13:59:00.126Z"
+              "WhenOpened": "2026-07-23T13:59:00.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "log.cpp",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.cpp",
               "RelativeDocumentMoniker": "ArgusVisor\\log.cpp",
               "ToolTip": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.cpp",
               "RelativeToolTip": "ArgusVisor\\log.cpp",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-23T13:55:43.586Z"
+              "WhenOpened": "2026-07-23T13:55:43.586Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "log.h",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.h",
               "RelativeDocumentMoniker": "ArgusVisor\\log.h",
               "ToolTip": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\log.h",
               "RelativeToolTip": "ArgusVisor\\log.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-23T13:54:07.027Z"
+              "WhenOpened": "2026-07-23T13:54:07.027Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -155,15 +160,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "driver_entry.cpp",
               "DocumentMoniker": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\driver_entry.cpp",
               "RelativeDocumentMoniker": "ArgusVisor\\driver_entry.cpp",
               "ToolTip": "C:\\Users\\ultim\\source\\repos\\ArgusVisor\\ArgusVisor\\driver_entry.cpp",
               "RelativeToolTip": "ArgusVisor\\driver_entry.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-23T13:51:49.057Z"
+              "WhenOpened": "2026-07-23T13:51:49.057Z",
+              "EditorCaption": ""
             }
           ]
         }

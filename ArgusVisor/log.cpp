@@ -51,7 +51,7 @@ extern "C" void LogpPrint(
     status = RtlStringCchPrintfA(
         finalBuffer,
         sizeof(finalBuffer),
-        "[ArgusVisor] [%s] [%s] %s\n",
+        "[ArgusVisor] %s : %s %s\n",
         levelString,
         FunctionName,
         messageBuffer

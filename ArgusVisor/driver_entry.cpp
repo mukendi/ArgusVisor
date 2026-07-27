@@ -14,8 +14,18 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Reg
 	NTSTATUS status = STATUS_SUCCESS;
 
 	DriverObject->DriverUnload = UnloadDriver;
-	//ARGUSVISOR_LOG_INFO("=============================================\n");
-	ARGUSVISOR_LOG_INFO("Loading ArgusVisor Engine v1.0.0...");
+
+	ARGUSVISOR_LOG_INFO("=======================================================================\n");
+	ARGUSVISOR_LOG_INFO("  ArgusVisor Security Engine      \n");
+	ARGUSVISOR_LOG_INFO("  Type: Intel VT-x Hypervisor     \n");
+	ARGUSVISOR_LOG_INFO("  Version: 1.0.0 (x64 Release)    \n");
+	ARGUSVISOR_LOG_INFO("  Build: " __DATE__ " - " __TIME__ "\n");
+	ARGUSVISOR_LOG_INFO("                                                               \n");
+	ARGUSVISOR_LOG_INFO("-----------------------------------------------------------------------\n");
+	ARGUSVISOR_LOG_INFO("[+] Initializing ArgusVisor Core Subsystems...\n");
+	ARGUSVISOR_LOG_INFO("[+] Target Environment : Windows NT x64 (Kernel Mode)\n");
+	ARGUSVISOR_LOG_INFO("[+] Active CPU Cores   : %u logical processor(s) detected\n", KeQueryActiveProcessorCount(NULL));
+	ARGUSVISOR_LOG_INFO("=======================================================================\n");
 
 	if (!IsVMXSupported()) {
 		ARGUSVISOR_LOG_ERROR("ERROR: VT-x does'nt support\n");
