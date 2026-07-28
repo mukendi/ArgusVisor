@@ -222,7 +222,10 @@ Incorrect VMCS configuration or invalid EPT entries can freeze or crash the oper
 Use only inside a dedicated research laboratory.
 
 ---
+# PoC
+![Architecture](https://github.com/mukendi/ArgusVisor/blob/main/ArgusVisor1.png)
 
+---
 # Acknowledgments
 
 Inspired by the work of:
