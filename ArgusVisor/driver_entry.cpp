@@ -7,8 +7,6 @@
 */
 #include "ept.h"
 
-
-
 extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath) {
 	UNREFERENCED_PARAMETER(RegistryPath);
 	NTSTATUS status = STATUS_SUCCESS;
@@ -16,22 +14,20 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Reg
 	DriverObject->DriverUnload = UnloadDriver;
 
 	ARGUSVISOR_LOG_INFO("=======================================================================\n");
-	ARGUSVISOR_LOG_INFO("  ArgusVisor Security Engine      \n");
-	ARGUSVISOR_LOG_INFO("  Type: Intel VT-x Hypervisor     \n");
-	ARGUSVISOR_LOG_INFO("  Version: 1.0.0 (x64 Release)    \n");
-	ARGUSVISOR_LOG_INFO("  Build: " __DATE__ " - " __TIME__ "\n");
-	ARGUSVISOR_LOG_INFO("                                                               \n");
-	ARGUSVISOR_LOG_INFO("-----------------------------------------------------------------------\n");
-	ARGUSVISOR_LOG_INFO("[+] Initializing ArgusVisor Core Subsystems...\n");
-	ARGUSVISOR_LOG_INFO("[+] Target Environment : Windows NT x64 (Kernel Mode)\n");
-	ARGUSVISOR_LOG_INFO("[+] Active CPU Cores   : %u logical processor(s) detected\n", KeQueryActiveProcessorCount(NULL));
+	ARGUSVISOR_LOG_INFO("[+] ArgusVisor Security Engine      ");
+	ARGUSVISOR_LOG_INFO("[+] Type: Intel VT-x Hypervisor     ");
+	ARGUSVISOR_LOG_INFO("[+] Version: 1.0.0 (x64 Release)    ");
+	ARGUSVISOR_LOG_INFO("[+] Build: " __DATE__ " - " __TIME__ "");
+	ARGUSVISOR_LOG_INFO("[+] Initializing ArgusVisor Core Subsystems...");
+	ARGUSVISOR_LOG_INFO("[+] Target Environment : Windows NT x64 (Kernel Mode)");
+	ARGUSVISOR_LOG_INFO("[+] Active CPU Cores   : %u logical processor(s) detected", KeQueryActiveProcessorCount(NULL));
 	ARGUSVISOR_LOG_INFO("=======================================================================\n");
 
 	if (!IsVMXSupported()) {
-		ARGUSVISOR_LOG_ERROR("ERROR: VT-x does'nt support\n");
+		ARGUSVISOR_LOG_ERROR("ERROR: VT-x does'nt support");
 		return STATUS_NOT_SUPPORTED;
 	}
-	ARGUSVISOR_LOG_INFO("SUCCESS: VT-x is support !\n");
+	ARGUSVISOR_LOG_INFO("SUCCESS: VT-x is support !");
 
 	/*
 	if (isHypervisorAlreadyActive()) {
@@ -41,24 +37,24 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Reg
 	*/
 
 	if (!IsVMXEnabledByUEFI()) {
-		ARGUSVISOR_LOG_ERROR("ERROR: VT-x is disabled in UEFI\n");
+		ARGUSVISOR_LOG_ERROR("ERROR: VT-x is disabled in UEFI");
 		return STATUS_UNSUCCESSFUL;
 	}
 
 	if (!ArgusVisorIsEptSupported()) {
-		ARGUSVISOR_LOG_ERROR("ERROR: EPT 2MB identity mapping is not supported by this CPU/VM\n");
+		ARGUSVISOR_LOG_ERROR("ERROR: EPT 2MB identity mapping is not supported by this CPU/VM");
 		return STATUS_HV_FEATURE_UNAVAILABLE;
 	}
 
 	status = ArgusVisorInitializeEpt();
 	if (!NT_SUCCESS(status)) {
-		ARGUSVISOR_LOG_ERROR("ERROR: EPT initialization failed: 0x%08X\n", status);
+		ARGUSVISOR_LOG_ERROR("ERROR: EPT initialization failed: 0x%08X", status);
 		return status;
 	}
 
 	status = ArgusVisorPrepareEptWriteViolationTest();
 	if (!NT_SUCCESS(status)) {
-		ARGUSVISOR_LOG_ERROR("ERROR: EPT write-violation test setup failed: 0x%08X\n", status);
+		ARGUSVISOR_LOG_ERROR("ERROR: EPT write-violation test setup failed: 0x%08X", status);
 		ArgusVisorTerminateEpt();
 		return status;
 	}
@@ -90,7 +86,7 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Reg
 	status = VmxOrcherstator();
 
 	if (!NT_SUCCESS(status)) {
-		ARGUSVISOR_LOG_ERROR("ERROR: Critical failure during VMX initialization. Loading canceled... \n");
+		ARGUSVISOR_LOG_ERROR("ERROR: Critical failure during VMX initialization. Loading canceled...");
 		if (GlobalVmxData != nullptr) {
 			ExFreePoolWithTag(GlobalVmxData, 'XmVB');
 			GlobalVmxData = nullptr;
@@ -103,7 +99,7 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Reg
 		return status;
 	}
 	InterlockedExchange(&GlobalVmxActive, 1);
-	ARGUSVISOR_LOG_INFO("SUCCESS: Hypervisor running in VMX Root\n");
+	ARGUSVISOR_LOG_INFO("SUCCESS: Hypervisor running in VMX Root");
 	return status;
 }
 
@@ -124,7 +120,7 @@ void UnloadDriver(PDRIVER_OBJECT DriverObject) {
 
 	ArgusVisorDumpVmExitSummary();
 	ArgusVisorFreeAllocatedState();
-	ARGUSVISOR_LOG_INFO("Unload Driver With Success!\n");
+	ARGUSVISOR_LOG_INFO("Unload Driver With Success!");
 }
 
 bool IsVMXSupported() {
@@ -615,7 +611,7 @@ extern "C" bool ArgusVisorCExitHandler(PGUEST_REGISTERS GuestRegisters) {
 	case EXIT_REASON_EPT_MISCONFIG: {
 		ULONG_PTR faultGpa = 0;
 		__vmx_vmread(VMCS_GUEST_PHYSICAL_ADDRESS, &faultGpa);
-		ARGUSVISOR_LOG_ERROR("EPT misconfig: rip=0x%llX gpa=0x%llX\n",
+		ARGUSVISOR_LOG_ERROR("EPT misconfig: rip=0x%llX gpa=0x%llX",
 			guestRip,
 			faultGpa);
 		KeBugCheckEx(0xE7000002, faultGpa, guestRip, 0, 0);
@@ -678,7 +674,7 @@ ULONG_PTR VmxonIpiWorker(ULONG_PTR Argument) {
 	ULONG processorIndex = KeGetCurrentProcessorNumber();
 	
 	if (GlobalVmxData == nullptr || GlobalVmcsData == nullptr || GlobalEptData == nullptr) {
-		ARGUSVISOR_LOG_ERROR("ERROR: Global structures (Vmx/Vmcs/EptData) are NULL on CPU %lu!\n", processorIndex);
+		ARGUSVISOR_LOG_ERROR("ERROR: Global structures (Vmx/Vmcs/EptData) are NULL on CPU %lu!", processorIndex);
 		InterlockedIncrement(errorCounter);
 		return 0;
 	}
@@ -892,7 +888,7 @@ ULONG_PTR VmxonIpiWorker(ULONG_PTR Argument) {
 		__vmx_vmread(VMCS_CTRL_EPT_POINTER, &vmcsEptPointer);
 
 		ARGUSVISOR_LOG_INFO(
-			"EPT VMCS armed: cpu=%lu secondary=0x%llX enable_ept=%llu eptp=0x%llX expected=0x%llX pml4_pa=0x%llX\n",
+			"EPT VMCS armed: cpu=%lu secondary=0x%llX enable_ept=%llu eptp=0x%llX expected=0x%llX pml4_pa=0x%llX",
 			processorIndex,
 			(ULONG64)vmcsSecondaryControls,
 			((ULONG64)vmcsSecondaryControls >> 1) & 1,
@@ -914,7 +910,7 @@ ULONG_PTR VmxonIpiWorker(ULONG_PTR Argument) {
 	}
 	__except (EXCEPTION_EXECUTE_HANDLER) {
 
-		ARGUSVISOR_LOG_ERROR("ERROR: VMX worker exception on core %lu. Exception code: 0x%08X. Checkpoint=%ld\n",
+		ARGUSVISOR_LOG_ERROR("ERROR: VMX worker exception on core %lu. Exception code: 0x%08X. Checkpoint=%ld",
 			processorIndex,
 			GetExceptionCode(),
 			GlobalVmxLastCheckpoint);
@@ -927,7 +923,7 @@ NTSTATUS  VmxOrcherstator() {
 	LONG errorCounter = 0;
 	ULONG processorCount = KeQueryActiveProcessorCount(nullptr);
 
-	ARGUSVISOR_LOG_INFO("INFO: There are %d cores.\n", processorCount);
+	//ARGUSVISOR_LOG_INFO("INFO: There are %d cores.\n", processorCount);
 
 	for (ULONG i = 0; i < processorCount; i++) {
 		PHYSICAL_ADDRESS low; low.QuadPart = 0;

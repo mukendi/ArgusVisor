@@ -1,12 +1,7 @@
+
 #include "header.h"
 
-extern PEPT_DATA    GlobalEptData;
-// Test EPT violation so VMExit
-extern PVOID             GlobalEptTestPage;
-extern PHYSICAL_ADDRESS  GlobalEptTestPagePhysical;
-extern ULONG64*          GlobalEptTestPte;
-extern LONG              GlobalEptTestArmed;
-extern LONG              GlobalEptTestViolationCount ;
+
 
 static const ULONG64 kEptReadAccess = 1ULL << 0;
 static const ULONG64 kEptWriteAccess = 1ULL << 1;

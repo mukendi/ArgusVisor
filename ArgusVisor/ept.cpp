@@ -1,12 +1,5 @@
 #include "ept.h"
 
-//PEPT_DATA GlobalEptData = nullptr;
-PVOID             GlobalEptTestPage = nullptr;
-PHYSICAL_ADDRESS  GlobalEptTestPagePhysical = {};
-ULONG64*          GlobalEptTestPte = nullptr;
-LONG              GlobalEptTestArmed = 0;
-LONG              GlobalEptTestViolationCount = 0;
-
 
 void ArgusVisorTerminateEpt() {
 	PEPT_DATA eptData = GlobalEptData;

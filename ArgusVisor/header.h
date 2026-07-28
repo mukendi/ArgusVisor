@@ -84,6 +84,13 @@ static LONG64 GlobalVmExitCounters[64] = {};
 
 
 
+inline PVOID             GlobalEptTestPage = nullptr;
+inline PHYSICAL_ADDRESS  GlobalEptTestPagePhysical = {};
+inline ULONG64*          GlobalEptTestPte = nullptr;
+inline LONG              GlobalEptTestArmed = 0;
+inline LONG              GlobalEptTestViolationCount = 0;
+
+
 
 extern "C" {
 	// Guest secure execution point at startup (VMLAUNCH)
