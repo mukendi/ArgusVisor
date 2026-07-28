@@ -1,6 +1,6 @@
 # ArgusVisor
 
-> A lightweight Intel VT-x research hypervisor for Windows x64.
+> ArgusVisor is a research-oriented mini security hypervisor for Windows x64.
 
 ![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue)
 ![Language](https://img.shields.io/badge/C%2B%2B-Kernel-orange)
