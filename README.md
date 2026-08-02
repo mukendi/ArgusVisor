@@ -13,6 +13,11 @@
 
 ArgusVisor is an educational Intel VT-x hypervisor designed to help security researchers, reverse engineers, and systems programmers understand how modern hardware virtualization actually works.
 
+---
+# PoC
+![Architecture](https://github.com/mukendi/ArgusVisor/blob/main/ArgusVisor1.png)
+
+---
 Unlike many hypervisor tutorials that focus only on implementation, ArgusVisor emphasizes **understanding the architecture** behind Intel VT-x.
 
 The project demonstrates:
@@ -221,11 +226,7 @@ Incorrect VMCS configuration or invalid EPT entries can freeze or crash the oper
 
 Use only inside a dedicated research laboratory.
 
----
-# PoC
-![Architecture](https://github.com/mukendi/ArgusVisor/blob/main/ArgusVisor1.png)
 
----
 # Acknowledgments
 
 Inspired by the work of:
