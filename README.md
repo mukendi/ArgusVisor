@@ -5,7 +5,6 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue)
 ![Language](https://img.shields.io/badge/C%2B%2B-Kernel-orange)
 ![Virtualization](https://img.shields.io/badge/Intel-VT--x-success)
-![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
 ---
 
