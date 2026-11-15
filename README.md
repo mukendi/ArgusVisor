@@ -11,27 +11,11 @@
 
 ## Overview
 
-ArgusVisor is an educational Intel VT-x hypervisor designed to help security researchers, reverse engineers, and systems programmers understand how modern hardware virtualization actually works.
+ArgusVisor is a research Intel VT-x hypervisor designed to help security researchers, reverse engineers, and systems programmers understand how modern hardware virtualization actually works.
 
 ---
 # PoC
 ![Architecture](https://github.com/mukendi/ArgusVisor/blob/main/ArgusVisor1.png)
-
----
-Unlike many hypervisor tutorials that focus only on implementation, ArgusVisor emphasizes **understanding the architecture** behind Intel VT-x.
-
-The project demonstrates:
-
-- VMX Root / Non-root Operation
-- VMCS lifecycle
-- VM Entry / VM Exit
-- CPUID interception
-- MSR interception
-- VMCALL-based unload
-- Extended Page Tables (EPT)
-- Dynamic EPT permission management
-
-The objective is not to build another production hypervisor, but to create a readable research platform that exposes the internal mechanisms used by modern virtualization-based security technologies.
 
 ---
 
@@ -53,31 +37,6 @@ The objective is not to build another production hypervisor, but to create a rea
 - Dynamic EPT permission updates
 - INVEPT support
 - DebugView tracing
-
----
-
-# Roadmap
-
-## Completed
-
-- VMXON
-- VMCS
-- VMLAUNCH
-- VMRESUME
-- VM Exit dispatcher
-- CPUID interception
-- MSR interception
-- EPT Identity Mapping
-
-## Planned
-
-- Monitor Trap Flag
-- VPID
-- INVVPID
-- EPT Hooking
-- Hypervisor Introspection API
-- Memory Cloaking
-- Nested Virtualization
 
 ---
 
